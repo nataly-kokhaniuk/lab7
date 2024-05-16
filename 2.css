@@ -1,0 +1,52 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#container {
+  width: 700px;
+  height: 500px;
+  border: 2px solid black;
+  overflow: auto;
+  padding: 10px;
+}
+
+.block {
+  margin: 10px;
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.block:hover {
+  background-color: lightgreen;
+}
+
+.fade-in {
+  animation: fadeInAnimation 2s ease;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOutAnimation 2s ease;
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
